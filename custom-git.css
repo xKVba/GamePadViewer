@@ -1,3 +1,22 @@
+.container {
+    width: 668px;
+    margin: 0 auto;
+}
+
+.controller {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    margin-top: 30px !important;
+    margin-left: 0px !important;
+}
+
+.controller .active {
+    display: block;
+}
+
 .controller.custom {
     background: url(https://raw.githack.com/AlexanderSkrock/GamePadViewer/master/images/base.svg);
     height: 630px;
@@ -12,11 +31,19 @@
     display: none;
 }
 
+.custom .touchpad {
+    width: 262px;
+    height: 151px;
+    position: absolute;
+    left: 272px;
+    top: 122px;
+}
+
 .custom .touchpad::after {
     content: "";
     position: absolute;
-    top: 172px;
-    left: 348px;
+    top: 41px;
+    left: 66px;
     width: 70px;
     height: 70px;
     border-radius: 50px;
@@ -78,14 +105,6 @@
     float: right;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
-}
-
-.custom .touchpad {
-    width: 262px;
-    height: 151px;
-    position: absolute;
-    left: 272px;
-    top: 122px;
 }
 
 .custom .meta {
@@ -168,7 +187,7 @@
 }
 
 .custom .y {
-    background-position: -98px 0;
+    background-position: -48px 0;
     top: 58px;
     left: 4px;
 }
@@ -207,8 +226,8 @@
 }
 
 .custom .stick.right {
-    top: calc(100% - 105px);
-    left: calc(100% - 105px);
+    top: 113px;
+    left: 288px;
 }
 
 .custom .dpad {
@@ -217,6 +236,10 @@
     height: 111px;
     top: 345px;
     left: 223px;
+}
+
+.custom .face.pressed {
+    background-position-y: 52px;
 }
 
 .custom .face {
@@ -252,13 +275,9 @@
 }
 
 .custom .face.right {
-    background-position: 0 -131px;
+    background-position: 0 -57px;
     top: 38px;
     right: 0;
-}
-
-.custom .face.pressed {
-    background-position-y: 52px;
 }
 
 .custom .half {
