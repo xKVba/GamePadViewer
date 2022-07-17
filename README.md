@@ -12,13 +12,12 @@ Currently only xbox one controllers are supported. For any other controllers it 
 
 1. Create a new branch & fork this project
 2. Modify & exchange images
-3. For more advanced customization you can also modify the [custom.css file](./custom.css).
+3. Host all neccessary assets [images](./images). There are a couple free cdns out there.
+4. Insert the static links to the image assets into the [git-variables.css-file](./git-variables.css).
+5. For more advanced customization you can also modify the [custom.css file](./custom.css).
 
 ## How to use as GamePadViewer?
-
-1. Host all neccessary assets [images](./images). There are a couple free cdns out there.
-2. Insert the static links to the image assets into the [git-variables.css-file](./git-variables.css).
-3. Go to [GamepadViewer](https://gamepadviewer.com/#generate). Small remark: This is an external link that is not under control.
-4. Choose xbox one as skin as it is currently the only supported skin.
-5. Generate a static link to the [custom-git.css-file](./custom-git.css) and enther this link into the field "Custom CSS URL".
-6. Then you can generate a link to your own customized gamepad viewer which you can use e. g. as a browser source for a stream overlay.
+1. Go to [GamepadViewer](https://gamepadviewer.com/#generate). Small remark: This is an external link that is not under control.
+2. Choose xbox one as skin as it is currently the only supported skin.
+3. Generate a static link to the [custom-git.css-file](./custom-git.css) and enther this link into the field "Custom CSS URL".
+4. Then you can generate a link to your own customized gamepad viewer which you can use e. g. as a browser source for a stream overlay.
